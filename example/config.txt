@@ -1,0 +1,2 @@
+Prefix plugins/GPUVectorAdd/example/
+Plugin GPUVectorAdd inputfile parameters.txt outputfile output.raw

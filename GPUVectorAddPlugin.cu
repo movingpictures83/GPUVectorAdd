@@ -12,13 +12,6 @@
 
 void GPUVectorAddPlugin::input(std::string file) {
  inputfile = file;
- /*std::ifstream ifile(inputfile.c_str(), std::ios::in);
- while (!ifile.eof()) {
-   std::string key, value;
-   ifile >> key;
-   ifile >> value;
-   myParameters[key] = value;
- }*/
  readParameterFile(file);
  N = atoi(myParameters["N"].c_str());
  A = (float*) malloc(N*sizeof(float));
